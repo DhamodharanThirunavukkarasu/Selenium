@@ -22,7 +22,7 @@ public void Open_Firefox_and_start_application() throws Throwable {
     
 }
 
-@When("^I enter valid \"([^\"]*)\" and \"([^\"]*)\"$")
+@When("^I enter valid \"(.*)\" and \"(.*)\"$")
 public void I_enter_valid_username_and_password(String uname,String pass) throws Throwable {
 	
 	driver.findElement(By.id("email")).sendKeys(uname);
